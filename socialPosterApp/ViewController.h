@@ -7,8 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
+    
+    UIImagePickerController *imagePicker;
+    UIImage *image;
+    
+    SLComposeViewController *SLComposer;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+- (IBAction)dismissKeyboard:(id)sender;
+-(IBAction)takePhoto:(id)sender;
+-(IBAction)loadFromLibrary:(id)sender;
+-(IBAction)postFacebook:(id)sender;
+-(IBAction)sendtwitter:(id)sender;
 
 
 @end

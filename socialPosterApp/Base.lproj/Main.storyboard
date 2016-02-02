@@ -22,6 +22,9 @@
                                 <rect key="frame" x="11" y="28" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="LrS-VW-cpC"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-zH-99F">
                                 <rect key="frame" x="11" y="66" width="288" height="154"/>
@@ -32,18 +35,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQg-DW-Bt9">
                                 <rect key="frame" x="11" y="228" width="288" height="30"/>
                                 <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C05-Tx-Wq2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvr-lW-u9B">
                                 <rect key="frame" x="11" y="263" width="288" height="30"/>
                                 <state key="normal" title="Load from Library"/>
+                                <connections>
+                                    <action selector="loadFromLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1z-1Y-2Jb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-cp-Zwv">
                                 <rect key="frame" x="11" y="318" width="288" height="30"/>
                                 <state key="normal" title="Post to facebook"/>
+                                <connections>
+                                    <action selector="postFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ds3-H5-dzq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ica-7y-Ref">
                                 <rect key="frame" x="11" y="356" width="288" height="30"/>
                                 <state key="normal" title="Send a twitter"/>
+                                <connections>
+                                    <action selector="sendtwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCZ-ev-tyu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -80,10 +95,14 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="qYG-zH-99F" id="Upk-X0-HUa"/>
+                        <outlet property="textField" destination="KMg-QH-SnR" id="05U-i5-6Pc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="219"/>
+            <point key="canvasLocation" x="292" y="179"/>
         </scene>
     </scenes>
 </document>
