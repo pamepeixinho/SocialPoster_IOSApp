@@ -15,6 +15,8 @@
 		4E38A4291C612E54009565D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E38A4271C612E54009565D3 /* LaunchScreen.storyboard */; };
 		4E38A4341C612E54009565D3 /* socialPosterAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38A4331C612E54009565D3 /* socialPosterAppTests.m */; };
 		4E38A43F1C612E54009565D3 /* socialPosterAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38A43E1C612E54009565D3 /* socialPosterAppUITests.m */; };
+		4E38A44D1C612E6C009565D3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E38A44C1C612E6C009565D3 /* Accounts.framework */; };
+		4E38A44F1C612E74009565D3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E38A44E1C612E74009565D3 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		4E38A43A1C612E54009565D3 /* socialPosterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socialPosterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E38A43E1C612E54009565D3 /* socialPosterAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socialPosterAppUITests.m; sourceTree = "<group>"; };
 		4E38A4401C612E54009565D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E38A44C1C612E6C009565D3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4E38A44E1C612E74009565D3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E38A44F1C612E74009565D3 /* Social.framework in Frameworks */,
+				4E38A44D1C612E6C009565D3 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 		4E38A40D1C612E54009565D3 = {
 			isa = PBXGroup;
 			children = (
+				4E38A44E1C612E74009565D3 /* Social.framework */,
+				4E38A44C1C612E6C009565D3 /* Accounts.framework */,
 				4E38A4181C612E54009565D3 /* socialPosterApp */,
 				4E38A4321C612E54009565D3 /* socialPosterAppTests */,
 				4E38A43D1C612E54009565D3 /* socialPosterAppUITests */,
