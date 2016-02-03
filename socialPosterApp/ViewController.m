@@ -50,12 +50,24 @@
 }
 
 -(IBAction)postFacebook:(id)sender{
-    
+    SLComposer  = [[SLComposeViewController alloc] init];
+    SLComposer = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+    [SLComposer setInitialText:[NSString stringWithFormat:@"%@", self.textField.text]];
+    [SLComposer addImage:self.imageView.image];
+    [self presentViewController:SLComposer animated:YES completion: NULL];
 }
 
 -(IBAction)sendtwitter:(id)sender{
-    
+    SLComposer  = [[SLComposeViewController alloc] init];
+    SLComposer = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [SLComposer setInitialText:[NSString stringWithFormat:@"%@", self.textField.text]];
+    [SLComposer addImage:self.imageView.image];
+    [self presentViewController:SLComposer animated:YES completion: NULL];
+
 }
 
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

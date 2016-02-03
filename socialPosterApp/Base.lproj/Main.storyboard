@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-QH-SnR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text to post on social media " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-QH-SnR">
                                 <rect key="frame" x="11" y="28" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="LrS-VW-cpC"/>
                                 </connections>
@@ -47,14 +47,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-cp-Zwv">
-                                <rect key="frame" x="11" y="318" width="288" height="30"/>
+                                <rect key="frame" x="7" y="340" width="296" height="30"/>
                                 <state key="normal" title="Post to facebook"/>
                                 <connections>
                                     <action selector="postFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ds3-H5-dzq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ica-7y-Ref">
-                                <rect key="frame" x="11" y="356" width="288" height="30"/>
+                                <rect key="frame" x="7" y="378" width="296" height="30"/>
                                 <state key="normal" title="Send a twitter"/>
                                 <connections>
                                     <action selector="sendtwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCZ-ev-tyu"/>
@@ -63,16 +63,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Ym-cp-Zwv" secondAttribute="trailing" constant="5" id="4Fk-r5-ynW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ym-cp-Zwv" secondAttribute="trailing" constant="1" id="4Fk-r5-ynW"/>
                             <constraint firstItem="qYG-zH-99F" firstAttribute="top" secondItem="KMg-QH-SnR" secondAttribute="bottom" constant="8" id="6Lg-C7-lQE"/>
-                            <constraint firstItem="3Ym-cp-Zwv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="7YK-5e-DGW"/>
-                            <constraint firstItem="3Ym-cp-Zwv" firstAttribute="top" secondItem="Fvr-lW-u9B" secondAttribute="bottom" constant="25" id="7yX-T0-6nN"/>
+                            <constraint firstItem="3Ym-cp-Zwv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="7YK-5e-DGW"/>
+                            <constraint firstItem="3Ym-cp-Zwv" firstAttribute="top" secondItem="Fvr-lW-u9B" secondAttribute="bottom" constant="47" id="7yX-T0-6nN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qYG-zH-99F" secondAttribute="trailing" constant="5" id="8zh-Hp-hxj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fvr-lW-u9B" secondAttribute="trailing" constant="5" id="DTf-XV-keu"/>
                             <constraint firstItem="qQg-DW-Bt9" firstAttribute="top" secondItem="qYG-zH-99F" secondAttribute="bottom" constant="8" id="H9j-Rc-Omb"/>
                             <constraint firstItem="qYG-zH-99F" firstAttribute="centerX" secondItem="KMg-QH-SnR" secondAttribute="centerX" id="PHh-Wj-QAI"/>
                             <constraint firstItem="KMg-QH-SnR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="Rb6-Jm-ob4"/>
-                            <constraint firstItem="ica-7y-Ref" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="Wqa-AR-7UF"/>
+                            <constraint firstItem="ica-7y-Ref" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="Wqa-AR-7UF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KMg-QH-SnR" secondAttribute="trailing" constant="5" id="WyY-bV-Vg6"/>
                             <constraint firstItem="Fvr-lW-u9B" firstAttribute="top" secondItem="qQg-DW-Bt9" secondAttribute="bottom" constant="5" id="XSd-4l-vy9"/>
                             <constraint firstItem="KMg-QH-SnR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XvR-3y-zHj"/>
@@ -82,7 +82,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="qQg-DW-Bt9" secondAttribute="trailing" constant="5" id="moP-jc-UUw"/>
                             <constraint firstItem="KMg-QH-SnR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="r8T-SX-Shz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KMg-QH-SnR" secondAttribute="trailing" constant="5" id="s8U-IV-wcG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ica-7y-Ref" secondAttribute="trailing" constant="5" id="voH-sD-gdU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ica-7y-Ref" secondAttribute="trailing" constant="1" id="voH-sD-gdU"/>
                             <constraint firstItem="ica-7y-Ref" firstAttribute="top" secondItem="3Ym-cp-Zwv" secondAttribute="bottom" constant="8" id="xhD-aV-o07"/>
                             <constraint firstItem="qQg-DW-Bt9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="yRS-1f-FQc"/>
                         </constraints>
